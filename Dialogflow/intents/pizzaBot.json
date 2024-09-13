@@ -1,0 +1,155 @@
+{
+  "id": "10ff9a2e-a8c5-46db-b539-eaee3cd64543",
+  "name": "pizzaBot",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "pizzaBot-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "08ca2493-6aa7-4ee9-b5c2-8a06431a1527",
+          "name": "phone-number",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "value": "$phone-number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your phone number"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "cef57bb6-74e7-4e73-96b2-fdccc0d843a5",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your mail id"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "de642ac4-bd69-4e4b-bdfe-552cda4d311b",
+          "name": "Size",
+          "required": true,
+          "dataType": "@Size",
+          "value": "$Size",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which size of the pizza ordered"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c385b7b5-05b6-4088-bbf3-77a1f7d95255",
+          "name": "toppings",
+          "required": true,
+          "dataType": "@toppings",
+          "value": "$toppings",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What you prefer toppings of pizza"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1547c06a-0474-455c-bf30-ee32636198a4",
+          "name": "date-time",
+          "required": true,
+          "dataType": "@sys.date-time",
+          "value": "$date-time",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "when you want"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "98adefd0-4a5c-4947-b6fa-61de7bfcec9a",
+          "name": "address",
+          "required": true,
+          "dataType": "@sys.address",
+          "value": "$address",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "which address you want to deliver"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "$Size pizza  with $toppings booked to your mail id $email and $phone-number.Thank you. do you want coke?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

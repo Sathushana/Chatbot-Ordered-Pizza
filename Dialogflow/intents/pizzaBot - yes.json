@@ -1,0 +1,44 @@
+{
+  "id": "272f43ed-06e1-487c-a1f6-4f2bccb1d9b4",
+  "parentId": "10ff9a2e-a8c5-46db-b539-eaee3cd64543",
+  "rootParentId": "10ff9a2e-a8c5-46db-b539-eaee3cd64543",
+  "name": "pizzaBot - yes",
+  "auto": true,
+  "contexts": [
+    "pizzaBot-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "pizzaBot.pizzaBot-yes",
+      "affectedContexts": [
+        {
+          "name": "yes",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thank you, pizza with coke will be delivered"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
